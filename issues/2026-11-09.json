@@ -5,81 +5,15 @@
   "nextIssue": "Tue, Nov 10",
   "topics": [
     {
-      "name": "Design & the built world",
-      "items": [
-        {
-          "id": "I1rlK3BKmyA",
-          "channel": "Technology Connections",
-          "title": "Alkaline batteries are obsolete — but not for the reason you'd think",
-          "minutes": 30,
-          "published": "Oct 30",
-          "why": "Why alkaline cells fell behind newer chemistries — and why the usual explanation isn't the one that matters."
-        },
-        {
-          "id": "7jW_PdUaO3Y",
-          "channel": "Never Too Small",
-          "title": "Inside the Life & DIY Home of an Illustrator Who Left London for the Seaside",
-          "minutes": 21,
-          "published": "Oct 29",
-          "why": "Illustrator Jay Cover's DIY-renovated Victorian house and studio in Hastings, after leaving London for the coast."
-        },
-        {
-          "id": "NdGheCcLj-E",
-          "channel": "Not Just Bikes",
-          "title": "Singapore Built a \"Car-Lite\" Town (and it's full of cars)",
-          "minutes": 26,
-          "published": "Nov 4",
-          "why": "A look at Singapore's \"car-lite\" new town and how much car infrastructure still shapes it."
-        }
-      ]
-    },
-    {
       "name": "Film & books",
       "items": [
-        {
-          "id": "0zkQhQNEmF0",
-          "channel": "Eleven Yearz",
-          "title": "Why Did 90s Star Trek Look Like That?",
-          "minutes": 26,
-          "published": "Nov 4",
-          "why": "Your Star Trek touchstone: why The Next Generation's Enterprise looked luxe and lived-in, from colour and film stock to the period's sense of the future."
-        },
-        {
-          "id": "Cd4vtY-uY9I",
-          "channel": "Like Stories of Old",
-          "title": "Why They Can't Make World War 2 Feel This \"Real\" Anymore",
-          "minutes": 29,
-          "published": "Oct 31",
-          "why": "Twenty-five years on, a close look at how Band of Brothers built immersion that later WWII films rarely match."
-        },
         {
           "id": "f5iyzbgBTgA",
           "channel": "Patrick (H) Willems",
           "title": "How Did Interstellar Become Every Dude's Favorite Movie?",
           "minutes": 46,
           "published": "Nov 3",
-          "why": "Your Interstellar touchstone: how Christopher Nolan's biggest disappointment became his most beloved film, and what that shift says about the movie."
-        }
-      ]
-    },
-    {
-      "name": "History",
-      "items": [
-        {
-          "id": "fxutKQYP5IU",
-          "channel": "toldinstone",
-          "title": "Three Forgotten Roman Celebrities",
-          "minutes": 11,
-          "published": "Nov 6",
-          "why": "Three of the Roman Empire's stranger celebrities, drawn from ancient sources and told as careers rather than legends."
-        },
-        {
-          "id": "wp2-FGLdgfE",
-          "channel": "Tasting History",
-          "title": "The Mysterious Death of Harry Houdini",
-          "minutes": 25,
-          "published": "Oct 27",
-          "why": "A historical recipe cooked on camera, paired with the story of Harry Houdini's mysterious final days."
+          "why": "Patrick Willems looks at why Christopher Nolan's Interstellar, which the description calls his biggest disappointment, became one of his most beloved films. From the channel behind your Interstellar touchstone."
         }
       ]
     },
@@ -92,15 +26,7 @@
           "title": "A Soundsystem Made From Junk...How much was it??",
           "minutes": 12,
           "published": "Nov 8",
-          "why": "Laura Kampf finishes her scrap-built \"Club Scheisse\" soundsystem and tallies what the junk build actually cost."
-        },
-        {
-          "id": "1JubdYerdoA",
-          "channel": "Chris Young",
-          "title": "Why Frozen Fries Beat Fresh Potatoes (ft. Andy Cooks)",
-          "minutes": 15,
-          "published": "Oct 30",
-          "why": "With Andy Cooks, on why Heston Blumenthal's triple-cooked chips made him famous — and why he now prefers frozen fries at home."
+          "why": "Laura Kampf shows her finished junk-built sound system, Club Scheisse, and how much it cost her to make."
         },
         {
           "id": "7M1Gsa8xyEA",
@@ -108,7 +34,7 @@
           "title": "Riding Every Era of Bikes for 150 Miles",
           "minutes": 35,
           "published": "Oct 24",
-          "why": "One hundred fifty miles on the Great Allegheny Passage, switching bikes era by era from a penny-farthing to modern gravel."
+          "why": "The Speeed crew rides 150 miles of the Great Allegheny Passage from Pittsburgh to Cumberland, on bikes from the 1880s through a modern Specialized gravel bike."
         }
       ]
     },
@@ -116,28 +42,20 @@
       "name": "Music",
       "items": [
         {
-          "id": "kIMIlLx4DIc",
-          "channel": "Adam Neely",
-          "title": "Music is Inherently Political",
-          "minutes": 46,
-          "published": "Nov 2",
-          "why": "An essay on democracy, autocracy, jazz, genre and money — and why music-making can't sit outside politics."
-        },
-        {
           "id": "73wCQRQb7v0",
           "channel": "NPR Music",
           "title": "Jungle: Tiny Desk Concert",
           "minutes": 18,
           "published": "Nov 2",
-          "why": "Jungle at the Tiny Desk: vintage soul and R&B grooves, with Tom McFarland, Josh Lloyd-Watson and Lydia Kitto."
+          "why": "Jungle plays a continuous Tiny Desk set of more than half a dozen songs, including Beat 54 into Dominoes, Keep Me Satisfied and Back on 74."
         },
         {
-          "id": "egDlxXlgfH8",
+          "id": "u-pJE8Udvpg",
           "channel": "KEXP",
-          "title": "Russian Circles - Full Performance (Live on KEXP)",
-          "minutes": 39,
-          "published": "Oct 30",
-          "why": "Russian Circles' full KEXP set, recorded August 9, 2026: Deficit, Harper Lewis, Empath and Eluvial."
+          "title": "Hariguem Zaboy - Full Performance (Live on KEXP)",
+          "minutes": 14,
+          "published": "Nov 5",
+          "why": "Thai band Hariguem Zaboy performs five songs live at Puri Bhagawan in Bali for KEXP, recorded August 29, 2026."
         },
         {
           "id": "hmYPh5CYtWw",
@@ -145,7 +63,7 @@
           "title": "FM-1: Amazing things are happening with this little synth",
           "minutes": 11,
           "published": "Nov 7",
-          "why": "Your FM-1 touchstone: new firmware and techniques for the little FM synthesizer, from the channel that set the taste."
+          "why": "David Hilowitz demonstrates the FM-1 synth and the firmware he is using with it."
         }
       ]
     }

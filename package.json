@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "npx --yes serve@14.2.4 . -l 3000",
-    "collect": "node --env-file-if-exists=.env scripts/collect.mjs"
+    "collect": "node --env-file-if-exists=.env scripts/collect.mjs",
+    "curate": "node --env-file-if-exists=.env scripts/curate.mjs"
   },
   "engines": { "node": ">=22.9" }
 }

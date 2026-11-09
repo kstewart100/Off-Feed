@@ -1,0 +1,223 @@
+{
+  "_note": "Curator run for 2026-11-09",
+  "generated": "2026-11-09T23:16:24.242Z",
+  "provider": "anthropic",
+  "model": "claude-haiku-5-5",
+  "decisions": [
+    {
+      "id": "I1rlK3BKmyA",
+      "decision": "exclude",
+      "rule": "Exclude: title and description do not clearly state the subject; description is mostly support links.",
+      "confidence": "high",
+      "topic": "Design",
+      "why": ""
+    },
+    {
+      "id": "difPlwouuPY",
+      "decision": "exclude",
+      "rule": "Exclude: description is mostly sponsor and affiliate links; title alone is unclear about the argument.",
+      "confidence": "medium",
+      "topic": "Design",
+      "why": ""
+    },
+    {
+      "id": "Cd4vtY-uY9I",
+      "decision": "exclude",
+      "rule": "Exclude: description is mostly sponsorship and links; it is a video about a TV series and its filmmaking, but the blurb would rest on promotional text. Also a commentary on another work.",
+      "confidence": "low",
+      "topic": "Film & books",
+      "why": ""
+    },
+    {
+      "id": "f5iyzbgBTgA",
+      "decision": "include",
+      "rule": "Include: single channel presenting its own analysis; extends the Star Trek and Interstellar touchstone area of film analysis.",
+      "confidence": "high",
+      "topic": "Film & books",
+      "why": "Patrick Willems looks at why Christopher Nolan's Interstellar, which the description calls his biggest disappointment, became one of his most beloved films. From the channel behind your Interstellar touchstone."
+    },
+    {
+      "id": "wp2-FGLdgfE",
+      "decision": "exclude",
+      "rule": "Exclude: description is mostly sponsorship and links; the subject is not clear enough beyond the title.",
+      "confidence": "low",
+      "topic": "History",
+      "why": ""
+    },
+    {
+      "id": "Ehmsdlf4jLQ",
+      "decision": "include",
+      "rule": "Include: maker presents her own build of a junk-made sound system, with the cost.",
+      "confidence": "medium",
+      "topic": "Workshop",
+      "why": "Laura Kampf shows her finished junk-built sound system, Club Scheisse, and how much it cost her to make."
+    },
+    {
+      "id": "1JubdYerdoA",
+      "decision": "exclude",
+      "rule": "Exclude: channel already represented by another candidate; also mainly sells a product (combustion.inc) and builds on another creator's video.",
+      "confidence": "medium",
+      "topic": "Workshop",
+      "why": ""
+    },
+    {
+      "id": "8IgyZllp72c",
+      "decision": "exclude",
+      "rule": "Exclude: built on a NerdWallet survey, and description is heavy with sponsor copy.",
+      "confidence": "medium",
+      "topic": "Workshop",
+      "why": ""
+    },
+    {
+      "id": "7M1Gsa8xyEA",
+      "decision": "include",
+      "rule": "Include: a team rides 150 miles of the Great Allegheny Passage on bikes from each era; their own performance and craft.",
+      "confidence": "medium",
+      "topic": "Workshop",
+      "why": "The Speeed crew rides 150 miles of the Great Allegheny Passage from Pittsburgh to Cumberland, on bikes from the 1880s through a modern Specialized gravel bike."
+    },
+    {
+      "id": "73wCQRQb7v0",
+      "decision": "include",
+      "rule": "Include: full live performance (Tiny Desk concert) by one band.",
+      "confidence": "high",
+      "topic": "Music",
+      "why": "Jungle plays a continuous Tiny Desk set of more than half a dozen songs, including Beat 54 into Dominoes, Keep Me Satisfied and Back on 74."
+    },
+    {
+      "id": "u-pJE8Udvpg",
+      "decision": "include",
+      "rule": "Include: full live performance by one band (KEXP Bali series).",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": "Thai band Hariguem Zaboy performs five songs live at Puri Bhagawan in Bali for KEXP, recorded August 29, 2026."
+    },
+    {
+      "id": "GXVZMiDbtiM",
+      "decision": "include",
+      "rule": "Include: full live performance by one band (KEXP Bali series).",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": "sub:shaman performs six songs live at Puri Bhagawan in Bali for KEXP, recorded August 29, 2026."
+    },
+    {
+      "id": "dW_7LAB1zF8",
+      "decision": "include",
+      "rule": "Include: full studio performance by one band.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": "Chanpan performs four songs live in the KEXP studio, recorded September 14, 2026."
+    },
+    {
+      "id": "egDlxXlgfH8",
+      "decision": "include",
+      "rule": "Include: full studio performance by one band.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": "Russian Circles performs four songs live in the KEXP studio, recorded August 9, 2026."
+    },
+    {
+      "id": "YdSY5DPq9n4",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule is not an issue here, but KEXP already has several candidates; keep the issue short by picking one KEXP performance.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "7hAX5Jfc7jk",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule; KEXP already has a pick.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "qWsLRr8hCHU",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule; KEXP already has a pick.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "xzU6ENUDrL8",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule; KEXP already has a pick.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "dicxqRQZmko",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule; KEXP already has a pick.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "988NAhJ13Kw",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule; KEXP already has a pick.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "yZXpav794BY",
+      "decision": "exclude",
+      "rule": "Exclude: one per channel rule; KEXP already has a pick.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "hmYPh5CYtWw",
+      "decision": "include",
+      "rule": "Include: a musician demonstrating his own synth and firmware; one person's own work.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": "David Hilowitz demonstrates the FM-1 synth and the firmware he is using with it."
+    },
+    {
+      "id": "wAq6lPzrSiM",
+      "decision": "exclude",
+      "rule": "Exclude: title and description are promotional and the argument is not clearly stated; description pushes a free download.",
+      "confidence": "low",
+      "topic": "Music",
+      "why": ""
+    },
+    {
+      "id": "hGzLkMQYOXI",
+      "decision": "exclude",
+      "rule": "Exclude: description is mainly a sales pitch for a paid piano product; title is hype.",
+      "confidence": "medium",
+      "topic": "Music",
+      "why": ""
+    }
+  ],
+  "review": [
+    {
+      "id": "GXVZMiDbtiM",
+      "channel": "KEXP",
+      "title": "sub:shaman - Full Performance (Live on KEXP)",
+      "note": "second pick from same channel — dropped",
+      "rule": "Include: full live performance by one band (KEXP Bali series)."
+    },
+    {
+      "id": "dW_7LAB1zF8",
+      "channel": "KEXP",
+      "title": "Chanpan - Full Performance (Live on KEXP)",
+      "note": "second pick from same channel — dropped",
+      "rule": "Include: full studio performance by one band."
+    },
+    {
+      "id": "egDlxXlgfH8",
+      "channel": "KEXP",
+      "title": "Russian Circles - Full Performance (Live on KEXP)",
+      "note": "second pick from same channel — dropped",
+      "rule": "Include: full studio performance by one band."
+    }
+  ]
+}

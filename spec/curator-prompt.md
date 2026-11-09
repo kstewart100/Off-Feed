@@ -1,6 +1,6 @@
 # Curator prompt — v0.1 (draft)
 
-Use this as the system prompt for step 3. Paste the contents of `spec/behavior-spec.md` where marked, then give the model the candidates file and the touchstones as the user message.
+`scripts/curate.mjs` builds this prompt automatically (behavior spec + blurb examples) and runs it against `candidates/<date>.json`. You can still paste it by hand: put `spec/behavior-spec.md` where marked, then give the model the candidates file and the touchstones as the user message.
 
 ---
 

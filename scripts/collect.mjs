@@ -112,4 +112,4 @@ const today = new Date().toISOString().slice(0, 10);
 await mkdir("candidates", { recursive: true });
 await writeFile(`candidates/${today}.json`, JSON.stringify({ generated: today, days, kept, dropped }, null, 2));
 console.log(`${pool.length} recent uploads → ${kept.length} pass the hard rules, ${dropped.length} dropped.`);
-console.log(`Wrote candidates/${today}.json. Next: run the curator (spec/curator-prompt.md) on it.`);
+console.log(`Wrote candidates/${today}.json. Next: npm run curate`);
