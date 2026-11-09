@@ -1,0 +1,58 @@
+{
+  "number": 4,
+  "date": "2026-11-11",
+  "weekOf": "Nov 11, 2026",
+  "nextIssue": "Wed, Nov 12",
+  "topics": [
+    {
+      "name": "The workshop",
+      "items": [
+        {
+          "id": "8VS7ehMUTtQ",
+          "channel": "Laura Kampf",
+          "title": "My Soundsystem Is Coming Together!!",
+          "minutes": 18,
+          "published": "Nov 1",
+          "why": "Laura Kampf on the next stretch of her scrap soundsystem build — how the details are starting to lock in."
+        },
+        {
+          "id": "UHYVxWY-61w",
+          "channel": "Look Mum No Computer",
+          "title": "MY STUDIO IS AN ABSOLUTE MESS",
+          "minutes": 18,
+          "published": "Oct 22",
+          "why": "A studio clear-out: sorting a music setup that has gotten out of hand."
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "items": [
+        {
+          "id": "LtUDeizHqKk",
+          "channel": "NPR Music",
+          "title": "Fat Joe: Tiny Desk Concert",
+          "minutes": 26,
+          "published": "Nov 5",
+          "why": "Fat Joe at the Tiny Desk — a set Bobby Carter describes as spontaneous and unpredictable, five years after his Tiny Desk (home) concert."
+        },
+        {
+          "id": "4QR09jzaQ1o",
+          "channel": "KEXP",
+          "title": "Wildwood Sessions - Full Performance (Live on KEXP)",
+          "minutes": 33,
+          "published": "Oct 26",
+          "why": "KEXP's Wildwood Sessions set, recorded September 11, 2026, with Colin Meloy, Ringdown, quickly quickly, and Omari Jazz."
+        },
+        {
+          "id": "vYHJ15s1KSA",
+          "channel": "Charles Cornell",
+          "title": "How The Music Of Metroid Methodically Drives You MAD",
+          "minutes": 19,
+          "published": "Oct 28",
+          "why": "How Metroid's soundtrack shifts from beauty into chaos — a walk through the score's effect on the player."
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "name": "off-feed",
   "version": "0.1.0",
   "private": true,
-  "description": "A finite weekly issue of hand-picked long-form videos. No autoplay, no recommendations.",
+  "description": "A finite daily issue of hand-picked long-form videos. No autoplay, no recommendations.",
   "type": "module",
   "scripts": {
     "dev": "npx --yes serve@14.2.4 . -l 3000",

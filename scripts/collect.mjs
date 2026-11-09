@@ -1,14 +1,16 @@
 #!/usr/bin/env node
-/* Steps 1–2 of the pipeline: collect recent uploads from the channel allowlist, then apply the
+/* Steps 1–2 of the pipeline: collect recent uploads from the working channel pool
+   (data/channels.json — expandable examples of the channel types), then apply the
    hard rules in code. Output: candidates/<date>.json for the curator (step 3) and for your review.
 
    Usage:  YT_API_KEY=... npm run collect            (default: last 21 days)
            YT_API_KEY=... npm run collect -- --days 30
 
-   - Channel RSS feeds need no key. Each returns that channel's 15 latest uploads.
-   - Lengths and embeddability come from the YouTube Data API (videos.list, 1 quota unit per
-     call of up to 50 videos; the default daily quota is 10,000 units). Get a key in Google Cloud
-     Console → APIs & Services → enable "YouTube Data API v3" → Credentials. Put it in .env, never in git.
+   - Collection uses the YouTube Data API (channels.list → uploads playlist → playlistItems.list).
+     Public channel RSS feeds currently 404 from some networks, so they are not used.
+   - Lengths and embeddability come from videos.list (1 quota unit per call of up to 50 videos;
+     default daily quota is 10,000 units). Get a key in Google Cloud Console → APIs & Services →
+     enable "YouTube Data API v3" → Credentials. Put it in .env, never in git.
    - Facts (title, length, date) come only from YouTube. The model never supplies them. */
 
 import { readFile, writeFile, mkdir, readdir } from "node:fs/promises";
@@ -17,6 +19,15 @@ const MIN_SECONDS = 600; // House rule 2: ten minutes or longer
 const days = Number(process.argv[process.argv.indexOf("--days") + 1]) || 21;
 const KEY = process.env.YT_API_KEY;
 if (!KEY) { console.error("Set YT_API_KEY (see README)."); process.exit(1); }
+
+const api = async (path, params = {}) => {
+  const url = new URL(`https://www.googleapis.com/youtube/v3/${path}`);
+  url.searchParams.set("key", KEY);
+  for (const [k, v] of Object.entries(params)) if (v != null) url.searchParams.set(k, v);
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`${path} ${res.status}: ${await res.text()}`);
+  return res.json();
+};
 
 const channels = JSON.parse(await readFile("data/channels.json", "utf8"));
 
@@ -28,19 +39,46 @@ for (const f of (await readdir("issues")).filter(f => /^\d{4}-\d{2}-\d{2}\.json$
 }
 
 const since = Date.now() - days * 864e5;
-const tag = (xml, name) => [...xml.matchAll(new RegExp(`<${name}[^>]*>([\\s\\S]*?)</${name}>`, "g"))].map(m => m[1]);
 
-// 1. Collect
+// 1. Collect — resolve each channel's uploads playlist, then walk recent items
+const uploads = {};
+for (let i = 0; i < channels.length; i += 50) {
+  const batch = channels.slice(i, i + 50);
+  const data = await api("channels", {
+    part: "contentDetails",
+    id: batch.map(c => c.channelId).join(",")
+  });
+  for (const it of data.items || []) {
+    uploads[it.id] = it.contentDetails.relatedPlaylists.uploads;
+  }
+  for (const ch of batch) {
+    if (!uploads[ch.channelId]) console.warn(`! ${ch.name}: channel not returned by API`);
+  }
+}
+
 const pool = [];
 for (const ch of channels) {
-  const res = await fetch(`https://www.youtube.com/feeds/videos.xml?channel_id=${ch.channelId}`);
-  if (!res.ok) { console.warn(`! ${ch.name}: RSS ${res.status}`); continue; }
-  for (const entry of tag(await res.text(), "entry")) {
-    const id = tag(entry, "yt:videoId")[0];
-    const published = tag(entry, "published")[0];
-    const isShort = /\/shorts\//.test(entry);
-    if (!id || isShort || used.has(id) || Date.parse(published) < since) continue;
-    pool.push({ id, channel: ch.name, topic: ch.topic, published });
+  const playlistId = uploads[ch.channelId];
+  if (!playlistId) continue;
+  let pageToken, stopped = false, pages = 0;
+  while (!stopped && pages < 3) {
+    pages++;
+    const data = await api("playlistItems", {
+      part: "contentDetails,snippet",
+      playlistId,
+      maxResults: "50",
+      pageToken
+    });
+    for (const it of data.items || []) {
+      const id = it.contentDetails?.videoId;
+      const published = it.contentDetails?.videoPublishedAt || it.snippet?.publishedAt;
+      if (!id || !published) continue;
+      if (Date.parse(published) < since) { stopped = true; break; }
+      if (used.has(id)) continue;
+      pool.push({ id, channel: ch.name, topic: ch.topic, published });
+    }
+    pageToken = data.nextPageToken;
+    if (!pageToken) break;
   }
 }
 
@@ -49,10 +87,8 @@ const iso = d => { const m = d.match(/PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?/) || [
 const details = {};
 for (let i = 0; i < pool.length; i += 50) {
   const ids = pool.slice(i, i + 50).map(v => v.id).join(",");
-  const url = `https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails,status&id=${ids}&key=${KEY}`;
-  const res = await fetch(url);
-  if (!res.ok) { console.error(`YouTube API ${res.status}: ${await res.text()}`); process.exit(1); }
-  for (const it of (await res.json()).items) details[it.id] = it;
+  const data = await api("videos", { part: "snippet,contentDetails,status", id: ids });
+  for (const it of data.items || []) details[it.id] = it;
 }
 
 const kept = [], dropped = [];

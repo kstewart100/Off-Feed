@@ -21,7 +21,6 @@
     </div>
     <h1>Off<span class="slash">/</span>Feed</h1>
     <div id="mast-issue" style="display:grid;gap:18px">
-      <p class="dek" id="dek">Long-form videos from people with a point of view. Nothing autoplays, nothing is recommended after, and the issue ends.</p>
       <div class="meter" aria-live="polite">
         <div class="meter-row"><span id="m-count"></span><span id="m-time"></span></div>
         <div class="bar"><i id="m-bar"></i></div>
@@ -38,9 +37,10 @@
 
   <div class="view" id="view-issue">
     <main id="issue" class="view"></main>
-    <aside class="end" id="end">
-      <h2 id="end-h">That's the whole issue.</h2>
-      <p id="end-p"></p>
+    <aside class="end" id="end" aria-label="End of issue">
+      <span class="end-rule" aria-hidden="true"></span>
+      <span class="end-mark" aria-hidden="true"></span>
+      <span class="end-rule" aria-hidden="true"></span>
     </aside>
   </div>
 
@@ -62,9 +62,9 @@
       <ul class="seeds" id="seeds"></ul>
     </section>
     <section>
-      <h2>Channels in the pool</h2>
-      <p class="lede">Issues draw only from these channels. Nothing comes from search or recommendations.</p>
-      <ul class="pool" id="pool"></ul>
+      <h2>Types of channels</h2>
+      <p class="lede">Issues draw from channels in these lanes — people with a point of view — not from search or recommendations. The working pool can grow; these are the kinds of channels, not a closed list of names.</p>
+      <ul class="types" id="types"></ul>
     </section>
   </div>
 </div>

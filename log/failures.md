@@ -17,5 +17,11 @@ What broke while building Off/Feed, why, and what changed. Newest first.
 - **Cause:** Video IDs are random strings that search engines don't index usefully.
 - **Change:** Same as above. Use YouTube's data directly.
 
-## 2026-11-08 — Thumbnails removed on purpose
-- **Not a failure, a decision:** Thumbnails can be fetched, but they're the most click-optimized part of YouTube. The page shows a plain 16:9 screen with the channel, runtime and date instead.
+## 2026-11-08 — Thumbnails restored on play screens
+- **What changed:** Owner asked to show the YouTube thumbnail on each entry's play button.
+- **How:** Static `i.ytimg.com/vi/<id>/hqdefault.jpg` under a dark scrim; channel, runtime and date stay on top. No API call required.
+- **Still out of scope:** Thumbnail grids, related videos, or using thumbs as a discovery surface.
+
+## 2026-11-08 — Thumbnails removed on purpose (superseded)
+- **Original decision:** Thumbnails can be fetched, but they're the most click-optimized part of YouTube. The page used a plain 16:9 screen with the channel, runtime and date instead.
+- **Status:** Reversed the same day — see entry above.

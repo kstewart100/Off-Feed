@@ -1,0 +1,129 @@
+{
+  "number": 3,
+  "date": "2026-11-10",
+  "weekOf": "Nov 10, 2026",
+  "nextIssue": "Wed, Nov 11",
+  "topics": [
+    {
+      "name": "Design & the built world",
+      "items": [
+        {
+          "id": "qh44Mo3mRzg",
+          "channel": "Technology Connections",
+          "title": "Why does a loose gas cap turn on the check engine light?",
+          "minutes": 23,
+          "published": "Nov 3",
+          "why": "Why a loose gas cap can light the check engine light — a short systems tour of evaporative emissions and how the car notices."
+        },
+        {
+          "id": "t3N9aNO5Wfo",
+          "channel": "Never Too Small",
+          "title": "This Tiny London Apartment Packs 4 Levels Into Just 45sqm/484sqft",
+          "minutes": 19,
+          "published": "Oct 22",
+          "why": "Rosie Dart's 45 m² (484 sq ft) split-level flat in a Victorian mansion block in West London, packed into four levels with mid-century and vintage pieces."
+        },
+        {
+          "id": "S19ag-Ifa8Y",
+          "channel": "Not Just Bikes",
+          "title": "This Small City's LRT is so Good it Made me Angry",
+          "minutes": 25,
+          "published": "Oct 28",
+          "why": "A visit to a small city's light-rail system that works so well it makes comparable North American transit look worse by comparison."
+        }
+      ]
+    },
+    {
+      "name": "Film & books",
+      "items": [
+        {
+          "id": "-H0iFbaZdAs",
+          "channel": "Thomas Flight",
+          "title": "Why The Elizabeth Holmes Doc is so Wild",
+          "minutes": 42,
+          "published": "Oct 24",
+          "why": "On the Elizabeth Holmes documentary and a larger question: a camera can see everything, but when does a documentary actually reveal the truth?"
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "items": [
+        {
+          "id": "Yezi5M0N_I8",
+          "channel": "Tasting History",
+          "title": "Feeding the British Troops of World War 2",
+          "minutes": 30,
+          "published": "Oct 20",
+          "why": "A historical recipe cooked on camera, alongside how British troops were fed during World War II."
+        }
+      ]
+    },
+    {
+      "name": "The workshop",
+      "items": [
+        {
+          "id": "vJd7jnchxzI",
+          "channel": "Laura Kampf",
+          "title": "Good LEDs / Bad LEDs",
+          "minutes": 24,
+          "published": "Oct 25",
+          "why": "Laura Kampf on choosing lights for her scrap soundsystem build — what separates useful LEDs from ones that fight you."
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "items": [
+        {
+          "id": "XoH44mH5laY",
+          "channel": "NPR Music",
+          "title": "Richard O'Brien's 'The Rocky Horror Show': Tiny Desk Concert",
+          "minutes": 16,
+          "published": "Oct 30",
+          "why": "The Broadway revival cast of Richard O'Brien's The Rocky Horror Show at the Tiny Desk, with an audience dressed for the occasion."
+        },
+        {
+          "id": "xPIMk4d4ulI",
+          "channel": "NPR Music",
+          "title": "CMAT: Tiny Desk Concert",
+          "minutes": 24,
+          "published": "Oct 27",
+          "why": "Irish singer-songwriter CMAT at the Tiny Desk: country-pop songwriting, stage presence and a set that includes Take a Sexy Picture of Me."
+        },
+        {
+          "id": "V8KJ89LFjD8",
+          "channel": "KEXP",
+          "title": "Shabazz Palaces - Full Performance (Live on KEXP)",
+          "minutes": 25,
+          "published": "Nov 6",
+          "why": "Shabazz Palaces' full KEXP studio set, recorded September 10, 2026, with Ishmael Butler and band."
+        },
+        {
+          "id": "fTmmYzD4QQk",
+          "channel": "KEXP",
+          "title": "OSEES - Full Performance (Live on KEXP)",
+          "minutes": 35,
+          "published": "Oct 23",
+          "why": "OSEES' full KEXP gathering-space set, recorded August 8, 2026: Plastic Plant through Block Of Ice."
+        },
+        {
+          "id": "BWyrhKi-0Ck",
+          "channel": "KEXP",
+          "title": "Çudamani - Full Performance (Live on KEXP)",
+          "minutes": 28,
+          "published": "Nov 3",
+          "why": "Balinese gamelan and dance ensemble Çudamani, recorded live at Puri Bhagawan for KEXP's Bali series."
+        },
+        {
+          "id": "Uui8-UP2rXM",
+          "channel": "Charles Cornell",
+          "title": "Why The Ending Of Metroid (NES) Blew EVERYONE Away",
+          "minutes": 19,
+          "published": "Nov 4",
+          "why": "A walk through the Metroid NES soundtrack's ending — why Hirokazu Tanaka's score still lands as one of the system's greats."
+        }
+      ]
+    }
+  ]
+}

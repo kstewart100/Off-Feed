@@ -1,6 +1,6 @@
 # Off/Feed
 
-A finite weekly issue of hand-picked, long-form videos about design, film and books, history, the workshop, and music. Nothing autoplays, nothing is recommended after, and the issue ends.
+A finite daily issue of hand-picked, long-form videos about design, film and books, history, the workshop, and music. Nothing autoplays, nothing is recommended after, and the issue ends.
 
 ## Run it
 
@@ -14,7 +14,7 @@ The page has to be served over http. If you open `index.html` directly from disk
 
 | Step | What happens | Where |
 |---|---|---|
-| 1. Collect | Recent uploads from the channel allowlist (RSS, no key) | `scripts/collect.mjs` |
+| 1. Collect | Recent uploads from the working channel pool (Data API) | `scripts/collect.mjs` |
 | 2. Filter | Hard rules in code: 10+ min, embeddable, not live, not already used | `scripts/collect.mjs` |
 | 3. Judge | A model applies the behavior spec and drafts blurbs | `spec/` (to build) |
 | 4. Review | You approve or swap picks | `candidates/` → `issues/` |
@@ -29,7 +29,8 @@ Plain code handles every rule it can. The model only makes judgment calls, and i
 index.html, styles.css, app.js   the page
 issues/index.json                points at the latest issue
 issues/2026-11-08.json           Issue No. 1
-data/channels.json               the allowlist (name, topic, YouTube channel ID)
+data/channel-types.json          the kinds of channels issues draw from
+data/channels.json               working example pool (name, topic, YouTube channel ID)
 data/touchstones.json            the 9 videos the taste was set from
 scripts/collect.mjs              steps 1–2
 spec/                            behavior spec, curator prompt, blurb examples

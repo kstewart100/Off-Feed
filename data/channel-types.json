@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Design & the built world",
+    "description": "Architecture, products, type, cities, and how everyday systems are designed and used."
+  },
+  {
+    "name": "Film & books",
+    "description": "Essays on movies, novels and visual culture from people making an argument, not a recap."
+  },
+  {
+    "name": "History",
+    "description": "Primary sources, material culture and the past cooked or built on camera."
+  },
+  {
+    "name": "The workshop",
+    "description": "Makers documenting a build, a tool or a technique from their own bench."
+  },
+  {
+    "name": "Music",
+    "description": "Full performances, instrument craft and writers with a musical point of view."
+  }
+]
