@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Off-Feed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;1,7..72,400&family=JetBrains+Mono:wght@400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="topline">
+      <div class="eyebrow"><span id="e-num">Issue</span><span id="e-week"></span><span id="e-next"></span></div>
+      <nav class="views" aria-label="Pages">
+        <a href="#" id="nav-issue">This issue</a>
+        <a href="#about" id="nav-about">About the feed</a>
+      </nav>
+    </div>
+    <h1>Off<span class="slash">/</span>Feed</h1>
+    <div id="mast-issue" style="display:grid;gap:18px">
+      <p class="dek" id="dek">Long-form videos from people with a point of view. Nothing autoplays, nothing is recommended after, and the issue ends.</p>
+      <div class="meter" aria-live="polite">
+        <div class="meter-row"><span id="m-count"></span><span id="m-time"></span></div>
+        <div class="bar"><i id="m-bar"></i></div>
+        <div class="budget" role="group" aria-label="Time I have tonight">
+          <span>Time I have:</span>
+          <button type="button" data-b="15" aria-pressed="false">15 min</button>
+          <button type="button" data-b="30" aria-pressed="false">30 min</button>
+          <button type="button" data-b="60" aria-pressed="false">1 hour</button>
+          <button type="button" data-b="0" aria-pressed="true">Any</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="view" id="view-issue">
+    <main id="issue" class="view"></main>
+    <aside class="end" id="end">
+      <h2 id="end-h">That's the whole issue.</h2>
+      <p id="end-p"></p>
+    </aside>
+  </div>
+
+  <div class="view about" id="view-about" hidden>
+    <section>
+      <h2>House rules</h2>
+      <p class="lede">Every video in an issue has to pass all five.</p>
+      <ol>
+        <li>Made by a person on camera or in the edit, with their own argument or craft.</li>
+        <li>Ten minutes or longer. No Shorts, no clip compilations.</li>
+        <li>No reaction videos, recaps, or AI-narrated rehashes.</li>
+        <li>At most one video per channel per issue.</li>
+        <li>Every link is checked against YouTube before it goes in.</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Tuned to your touchstones</h2>
+      <p class="lede">The videos the feed's taste was set from.</p>
+      <ul class="seeds" id="seeds"></ul>
+    </section>
+    <section>
+      <h2>Channels in the pool</h2>
+      <p class="lede">Issues draw only from these channels. Nothing comes from search or recommendations.</p>
+      <ul class="pool" id="pool"></ul>
+    </section>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

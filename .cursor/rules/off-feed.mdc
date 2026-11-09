@@ -1,0 +1,6 @@
+---
+description: Off/Feed product and data rules
+alwaysApply: true
+---
+
+Read AGENTS.md at the repo root before changing anything. It holds the product rules (no autoplay, no recommendations, finite issues, allowlist only) and the data rules (facts come from YouTube, never from a model). Treat them as requirements, not suggestions. If a request conflicts with them, say so before writing code.

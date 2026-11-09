@@ -1,0 +1,153 @@
+{
+  "number": 1,
+  "date": "2026-11-08",
+  "weekOf": "Nov 8, 2026",
+  "nextIssue": "Sun, Nov 15",
+  "topics": [
+    {
+      "name": "Design & the built world",
+      "items": [
+        {
+          "id": "RjJO-fCWR54",
+          "channel": "Stewart Hicks",
+          "title": "The Problem With Colorful Houses",
+          "minutes": 11,
+          "published": "Sep 17",
+          "why": "An architecture professor traces how American houses went beige, gray and black, starting with San Francisco's Painted Ladies and running through lead paint and public-health history."
+        },
+        {
+          "id": "nXdVG45wveo",
+          "channel": "Technology Connections",
+          "title": "The disappearing and unappreciated art of audible alerts",
+          "minutes": 24,
+          "published": "Apr 12",
+          "why": "Beeps, chimes and alarm tones treated as interface design. It's feedback you hear rather than read, and it builds on his earlier video about elevator chimes."
+        },
+        {
+          "id": "altfwRMXG4A",
+          "channel": "Linus Boman",
+          "title": "The secret history of font piracy",
+          "minutes": 21,
+          "published": "May 22, 2025",
+          "why": "A designer and type historian looks at how fonts get copied and resold. One example is the famous anti-DVD-piracy PSA, which itself used a pirated font."
+        },
+        {
+          "id": "yUzgb0RYpfc",
+          "channel": "Never Too Small",
+          "title": "Small Apartment Transformed With Clever Storage and Colour",
+          "minutes": 10,
+          "published": "Nov 5",
+          "why": "A 58 m² (624 sq ft) apartment in Wrocław, Poland, by interior designer Karolina Jackowska of the studio Onuko."
+        }
+      ]
+    },
+    {
+      "name": "Film & books",
+      "items": [
+        {
+          "id": "dluP9Lo5uos",
+          "channel": "Thomas Flight",
+          "title": "In Praise of Brilliant Voiceover",
+          "minutes": 18,
+          "published": "Jun 25",
+          "why": "Screenwriting advice usually warns against voiceover. This essay argues for the films that make it work."
+        },
+        {
+          "id": "mxP1MeDYhrc",
+          "channel": "Like Stories of Old",
+          "title": "Cormac McCarthy's Most Profound Story",
+          "minutes": 39,
+          "published": "Apr 30",
+          "why": "A close reading of the heretic-and-priest tale inside McCarthy's novel The Crossing, a story the creator says he spent two years untangling."
+        },
+        {
+          "id": "4cdowB9udPc",
+          "channel": "Jacob Geller",
+          "title": "Why Does Everyone Think “1984” Agrees With Them?",
+          "minutes": 45,
+          "published": "Apr 24",
+          "why": "A long essay on how Orwell's novel gets claimed by every side of an argument."
+        },
+        {
+          "id": "ADz948nYmxU",
+          "channel": "Eleven Yearz",
+          "title": "Why Did Terminator 2 Look Like That?",
+          "minutes": 24,
+          "published": "Sep 1",
+          "why": "From the channel behind your Star Trek pick. It asks whether T2's blue nights were a choice by James Cameron's crew or how night was shot back then."
+        }
+      ]
+    },
+    {
+      "name": "History",
+      "items": [
+        {
+          "id": "c0dGdT1VCho",
+          "channel": "toldinstone",
+          "title": "Did the Romans Know their Empire was Declining?",
+          "minutes": 10,
+          "published": "Sep 25",
+          "why": "How Romans living through the collapse described what was happening to them, drawn from ancient sources."
+        },
+        {
+          "id": "8Rs1QlaYRi4",
+          "channel": "Tasting History with Max Miller",
+          "title": "Eat Like A Medieval Hermit",
+          "minutes": 26,
+          "published": "Nov 3",
+          "why": "A historical recipe cooked on camera, alongside the history of the people who ate it."
+        }
+      ]
+    },
+    {
+      "name": "The workshop",
+      "items": [
+        {
+          "id": "HkFdwBtc-bc",
+          "channel": "Rex Krueger",
+          "title": "I Built a REAL Woodworking Vise for Almost Nothing",
+          "minutes": 18,
+          "published": "Oct 29",
+          "why": "A face vise built from a vise screw and hardware-store pipe fittings. Free plans are linked in the description."
+        },
+        {
+          "id": "lLYhbL3hbBw",
+          "channel": "Laura Kampf",
+          "title": "Is It Okay To Steal Ideas?",
+          "minutes": 22,
+          "published": "Sep 20",
+          "why": "A designer-maker on copying, influence and credit in maker work."
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "items": [
+        {
+          "id": "MCNZ_YpQzfI",
+          "channel": "Adam Neely",
+          "title": "Sungazer Plus Live at the Blue Note (full concert)",
+          "minutes": 55,
+          "published": "Jun 23",
+          "why": "A full big-band concert film recorded July 1–2, 2025, at the Blue Note in New York. It's the long-form live set, in the spirit of your Vulfpeck pick."
+        },
+        {
+          "id": "_Mp_bpIZKlI",
+          "channel": "NPR Music",
+          "title": "Brìghde Chaimbeul: Tiny Desk Concert",
+          "minutes": 20,
+          "published": "Oct 23",
+          "why": "Scottish smallpipes, played in a folk tradition and pushed somewhere new."
+        },
+        {
+          "id": "aNaFTstuPrA",
+          "channel": "Look Mum No Computer",
+          "title": "I Built a Real Version of a Plugin",
+          "minutes": 19,
+          "published": "Nov 5",
+          "why": "A software drone instrument rebuilt as physical hardware. It sits next to your David Hilowitz FM-1 pick."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "_note": "Label each candidate yourself before running the curator. 'label' is include or exclude; 'reason' names the rule. The examples below come from Issue No. 1 research and are pre-labeled as a starting point. Replace or extend them.",
+  "cases": [
+    { "id": "RjJO-fCWR54", "channel": "Stewart Hicks", "title": "The Problem With Colorful Houses", "label": "include", "reason": "Own research and argument; design topic" },
+    { "id": "lLYhbL3hbBw", "channel": "Laura Kampf", "title": "Is It Okay To Steal Ideas?", "label": "include", "reason": "Own argument; description is mostly sponsor, so a hard case for blurbs" },
+    { "id": "MCNZ_YpQzfI", "channel": "Adam Neely", "title": "Sungazer Plus Live at the Blue Note (full concert)", "label": "include", "reason": "Full live performance counts as craft" },
+    { "id": "8IgyZllp72c", "channel": "Speeed", "title": "The 12 Things People Regret Spending Money On", "label": "exclude", "reason": "Listicle format" },
+    { "id": "18bqJ3qOOX8", "channel": "Speeed", "title": "18 Affordable Watches For Cool Guys", "label": "exclude", "reason": "Shopping list; title mainly sells" },
+    { "id": "difPlwouuPY", "channel": "Phil Edwards", "title": "The real AI bubble", "label": "exclude", "reason": "Off-topic for the allowlist's design focus this week (your call — relabel if you disagree)" }
+  ]
+}
